@@ -1,9 +1,4 @@
 #Вспомогательные шаблоны
-snippet \
-	.${1:b-}
-	{
-		${2}
-	}
 snippet /
 	/* ${1} */ /**/${2}
 snippet !
@@ -105,13 +100,9 @@ snippet z1
 	zoom: 1
 #Размеры
 snippet bsb
-	-webkit-box-sizing: border-box
-	   -moz-box-sizing: border-box
-	        box-sizing: border-box
+	box-sizing: border-box
 snippet bsc
-	-webkit-box-sizing: content-box
-	   -moz-box-sizing: content-box
-	        box-sizing: content-box
+	box-sizing: content-box
 snippet w
 	width: ${1}${2}
 snippet w1
@@ -274,13 +265,9 @@ snippet bols
 snippet bolw
 	border-left-width: ${1}${2}
 snippet borr
-	-webkit-border-radius: $1
-	   -moz-border-radius: $1
-	        border-radius: ${1:}${2}
+	border-radius: ${1:}${2}
 snippet boxs
-	-webkit-box-shadow: $1
-	   -moz-box-shadow: $1
-	        box-shadow: ${1:}${2}
+	box-shadow: ${1:}${2}
 snippet o
 	outline: 1px solid ${1}${2}
 snippet ba
@@ -290,33 +277,7 @@ snippet ban
 snippet bau
 	background: ${1:red} url(//${2:yandex.st/}) no-repeat ${3:top left}${4}
 snippet bag
-	background: -webkit-gradient(
-					linear,
-					left top,
-					left bottom,
-					color-stop(0%, rgba($1, $2, $3, $4)),
-					color-stop(100%, rgba($5, $6, $7, $8))
-				)
-	background: -webkit-linear-gradient(
-	                top,
-	                rgba($1, $2, $3, $4) 0%,
-	                rgba($5, $6, $7, $8) 100%
-	            )
-	background: -moz-linear-gradient(
-	                top,
-	                rgba($1, $2, $3, $4) 0%,
-	                rgba($5, $6, $7, $8) 100%
-	            )
-	background: -o-linear-gradient(
-	                top,
-	                rgba($1, $2, $3, $4) 0%,
-	                rgba($5, $6, $7, $8) 100%
-	            )
-	background: linear-gradient(
-	                top,
-	                rgba(${1:0}, ${2:0}, ${3:0}, ${4:0.5}) 0%,
-	                rgba(${5:255}, ${6:255}, ${7:255}, ${8:0.5}) 100%
-	            )${9}
+	background: linear-gradient( top, rgba(${1:0}, ${2:0}, ${3:0}, ${4:0.5}) 0%, rgba(${5:255}, ${6:255}, ${7:255}, ${8:0.5}) 100% )${9}
 snippet bac
 	background-color: ${1}${2}
 snippet bact
@@ -324,33 +285,7 @@ snippet bact
 snippet bai
 	background-image: url(//${1:yandex.st/})${2}
 snippet baig
-	background-image: -webkit-gradient(
-	                      linear,
-	                      left top,
-	                      left bottom,
-	                      color-stop(0%, rgba($1, $2, $3, $4)),
-	                      color-stop(100%, rgba($5, $6, $7, $8))
-	                  )
-	background-image: -webkit-linear-gradient(
-	                      top,
-	                      rgba($1, $2, $3, $4) 0%,
-	                      rgba($5, $6, $7, $8) 100%
-	                  )
-	background-image: -moz-linear-gradient(
-	                      top,
-	                      rgba($1, $2, $3, $4) 0%,
-	                      rgba($5, $6, $7, $8) 100%
-	                  )
-	background-image: -o-linear-gradient(
-	                      top,
-	                      rgba($1, $2, $3, $4) 0%,
-	                      rgba($5, $6, $7, $8) 100%
-	                  )
-	background-image: linear-gradient(
-	                      top,
-	                      rgba(${1:0}, ${2:0}, ${3:0}, ${4:0.5}) 0%,
-	                      rgba(${5:255}, ${6:255}, ${7:255}, ${8:0.5}) 100%
-	                  )${9}
+	background-image: linear-gradient( top, rgba(${1:0}, ${2:0}, ${3:0}, ${4:0.5}) 0%, rgba(${5:255}, ${6:255}, ${7:255}, ${8:0.5}) 100% )${9}
 snippet bain
 	background-image: none
 snippet bap
@@ -376,16 +311,9 @@ snippet fis
 snippet ts
 	text-shadow: ${1}${2}
 snippet tr
-	-webkit-transition: $1 $2s $3
-	   -moz-transition: $1 $2s $3
-	     -o-transition: $1 $2s $3
-	        transition: ${1:all} ${2:.3}s ${3:ease}${4}
+	transition: ${1:all} ${2:.3}s ${3:ease}${4}
 snippet trf
-	-webkit-transform: $1
-	   -moz-transform: $1
-	    -ms-transform: $1
-	     -o-transform: $1
-	        transform: ${1:}${2}
+	transform: ${1:}${2}
 snippet us
 	-webkit-user-select: $1
 	   -moz-user-select: $1
